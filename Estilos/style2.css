@@ -1,0 +1,218 @@
+body{
+    margin: 0px;
+}
+
+.olvidaste-tu {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .olvidaste-tu .div {
+    background-color: rgba(255, 255, 255, 1);
+    background: linear-gradient(180deg, rgb(207.19, 240.66, 255) 0%, rgb(148.73, 157.98, 241.19) 100%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .olvidaste-tu .rectangle {
+    position: absolute;
+    width: 257px;
+    height: 271px;
+    top: 660px;
+    left: 234px;
+    background-color: #99aacc;
+    transform: rotate(66.59deg);
+  }
+  
+  .olvidaste-tu .overlap-group {
+    position: absolute;
+    width: 345px;
+    height: 610px;
+    top: 217px;
+    left: 794px;
+    background-color: #ffffff;
+    border-radius: 6px;
+  }
+  
+  .olvidaste-tu .text-wrapper {
+    position: absolute;
+    top: 346px;
+    left: 102px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #787878;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .olvidaste-tu .text-wrapper-2 {
+    position: absolute;
+    top: 246px;
+    left: 102px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #787878;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .olvidaste-tu .p {
+    position: absolute;
+    width: 312px;
+    top: 119px;
+    left: 17px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .olvidaste-tu .text-wrapper-3 {
+    position: absolute;
+    top: 54px;
+    left: 29px;
+    background: linear-gradient(180deg, rgb(207, 241, 255) 0%, rgb(149, 158, 241) 100%);
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    letter-spacing: 2.64px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .olvidaste-tu .text-wrapper-4 {
+    top: 222px;
+    position: absolute;
+    left: 102px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .olvidaste-tu .text-wrapper-5 {
+    top: 322px;
+    position: absolute;
+    left: 102px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .olvidaste-tu .overlap {
+    width: 284px;
+    height: 40px;
+    top: 436px;
+    left: 29px;
+    background-color: #959ef1;
+    box-shadow: 0px 2px 2px #00000040;
+    position: absolute;
+    border-radius: 6px;
+  }
+  
+  .olvidaste-tu .text-wrapper-6 {
+    position: absolute;
+    top: 19px;
+    left: 94px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+  
+  .olvidaste-tu .thumb {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 229px;
+    left: 45px;
+    background-color: #99a4f2;
+    border-radius: 6px;
+  }
+  
+  .olvidaste-tu .thumb-2 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 326px;
+    left: 45px;
+    background-color: #99a4f2;
+    border-radius: 6px;
+  }
+  
+  .olvidaste-tu .div-wrapper {
+    width: 284px;
+    height: 40px;
+    top: 514px;
+    left: 29px;
+    border: 1px solid;
+    border-color: #959ef1;
+    box-shadow: 0px 2px 2px #00000040;
+    position: absolute;
+    border-radius: 6px;
+  }
+  
+  .olvidaste-tu .text-wrapper-7 {
+    position: absolute;
+    top: 18px;
+    left: 84px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #959ef1;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+  
+  .olvidaste-tu .rectangle-2 {
+    position: absolute;
+    width: 340px;
+    height: 371px;
+    top: 68px;
+    left: 160px;
+    background-color: #caecfa;
+    transform: rotate(61.08deg);
+  }
+  
+  .olvidaste-tu .rectangle-3 {
+    position: absolute;
+    width: 355px;
+    height: 305px;
+    top: 70px;
+    left: 1448px;
+    background-color: #a8b7d6;
+    transform: rotate(30.77deg);
+  }
+  
+  .olvidaste-tu .rectangle-4 {
+    position: absolute;
+    width: 290px;
+    height: 316px;
+    top: 610px;
+    left: 1451px;
+    background-color: #8e99ff;
+    transform: rotate(67.75deg);
+  }
+  
