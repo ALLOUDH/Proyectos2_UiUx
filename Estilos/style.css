@@ -79,6 +79,16 @@ body{
   border-color: #c9c9c9d9;
 }
 
+.ingresar .input_email {
+  position: absolute;
+  width: 260px;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+  outline: none;
+  border: 0px;
+}
+
 .ingresar .text-wrapper-3 {
   position: absolute;
   top: 257px;
@@ -102,12 +112,21 @@ body{
   border-color: #c9c9c9d9;
 }
 
+.ingresar .input_pass{
+  position: absolute;
+  width: 210px;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+  outline: none;
+  border: 0px;
+}
 .ingresar .element-eye-icon {
   position: absolute;
-  width: 28px;
-  height: 31px;
-  top: 3px;
-  left: 242px;
+  width: 26px;
+  height: 23px;
+  top: 8px;
+  left: 250px;
 }
 
 .ingresar .thumb {
@@ -120,6 +139,44 @@ body{
   border-radius: 6px;
 }
 
+.ingresar .checkbox_login_recordar{
+  position: relative;
+  margin: 0px;
+  width: 19px;
+  height: 19px;
+  top: 1.5px;
+  left: 1.7px;
+  border: 6px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label{
+  position: relative;
+  margin: 0px;
+  width: 19px;
+  height: 19px;
+  top: 1.5px;
+  left: 1.7px;
+  border: 6px;
+  background-color: #99a4f2;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label{
+  display: block;
+  background-color: rebeccapurple;
+}
+
+.ingresar .check{
+  width: 20px;
+  height: 10px;
+  display: none;
+}
 .ingresar .text-wrapper-4 {
   position: absolute;
   top: 349px;

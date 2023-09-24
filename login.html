@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="Estilos/style.css" />
+    <script src="JavaScript/showpass.js"></script>
   </head>
   <body>
     <div class="ingresar">
@@ -11,11 +12,20 @@
         <div class="overlap-group">
           <div class="text-wrapper">Correo Electrónico</div>
           <div class="text-wrapper-2">BIENVENIDO</div>
-          <div class="rectangle-2"></div>
+          <div class="rectangle-2">
+            <input class="input_email" type="email" id="login_email"/>
+          </div>
           <div class="text-wrapper-3">Contraseña</div>
-          <div class="overlap"><img class="element-eye-icon" src="Resources/211661_eye_icon.svg" /></div>
+          <div class="overlap">
+            <input class="input_pass" type="password" id="password"/><img class="element-eye-icon" src="Resources/211661_eye_icon.svg" onclick="mostrar_pass()"/>
+          </div>
           <!-- Para el "thumb" se hara un checkbox de confirmación-->
-          <div class="thumb"></div>
+          <div class="thumb">
+            <input class="checkbox_login_recordar" type="checkbox" id="recordar_checkbox"/>
+            <label for="recordar_checkbox">
+              <img class="check" src="Resources/Vector.svg"/>
+            </label>
+          </div>
           <div class="text-wrapper-4">Recuerdame</div>
           <a href="misspassword.html"><div class="text-wrapper-5">Olvidaste tu contraseña?</div></a>
           <a href="inicio.html"><div class="div-wrapper"><div class="text-wrapper-6">INGRESAR</div></div></a>
