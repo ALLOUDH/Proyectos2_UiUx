@@ -121,11 +121,19 @@ body{
   outline: none;
   border: 0px;
 }
-.ingresar .element-eye-icon {
+.ingresar .element-eye-icon { /* Estilos para el ojo abierto */
   position: absolute;
   width: 26px;
   height: 23px;
   top: 8px;
+  left: 250px;
+}
+
+#eye-icon.closed-eye { /* Estilos para el ojo cerrado */
+  position: absolute;
+  width: 26px;
+  height: 15px;
+  top: 12px;
   left: 250px;
 }
 
@@ -135,11 +143,15 @@ body{
   height: 22px;
   top: 346px;
   left: 23px;
-  background-color: #99a4f2;
+  background-color: #ffffff;
   border-radius: 6px;
 }
 
-.ingresar .checkbox_login_recordar{
+.ingresar .thumb:hover { /* Estilos para cuando se pase el cursor por el contenedor del checkbox */
+  background-color: #99a4f2;
+}
+
+.ingresar .checkbox_login_recordar{ /* Estilos para checkbox por defecto (no utilizado) */
   position: relative;
   margin: 0px;
   width: 19px;
@@ -149,17 +161,17 @@ body{
   border: 6px;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"]{ /* Esconde el checkbox por defecto */
   display: none;
 }
 
-input[type="checkbox"] + label{
+input[type="checkbox"] + label{ /* Estilos para el checkbox perzonalizado */
   position: relative;
   margin: 0px;
   width: 19px;
   height: 19px;
-  top: 1.5px;
-  left: 1.7px;
+  top: 1.4px;
+  left: 1.5px;
   border: 6px;
   background-color: #99a4f2;
   border: none;
@@ -167,16 +179,16 @@ input[type="checkbox"] + label{
   border-radius: 4px;
 }
 
-input[type="checkbox"]:checked + label{
-  display: block;
-  background-color: rebeccapurple;
-}
-
-.ingresar .check{
+.ingresar .check{ /* Estilos para el icono de check */
   width: 20px;
   height: 10px;
   display: none;
 }
+
+.ingresar .checkbox_login_recordar:checked + label .check { /* Mostrar el icono de check al hacer click */
+  display: inline-block;
+}
+
 .ingresar .text-wrapper-4 {
   position: absolute;
   top: 349px;
@@ -201,6 +213,10 @@ input[type="checkbox"]:checked + label{
   line-height: normal;
 }
 
+.ingresar .text-wrapper-5:hover{ /* Mostrar el texto subrayado al pasar el mouse */
+  text-decoration: underline;
+}
+
 .ingresar .div-wrapper {
   position: absolute;
   width: 284px;
@@ -212,9 +228,13 @@ input[type="checkbox"]:checked + label{
   box-shadow: 0px 2px 2px #00000040;
 }
 
+.ingresar .div-wrapper:hover { /* Estilos para cuando el cursor pase por el boton ingresar */
+  background-color: #3a517463; 
+}
+
 .ingresar .text-wrapper-6 {
   position: absolute;
-  top: 19px;
+  top: 15px;
   left: 97px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
@@ -237,9 +257,13 @@ input[type="checkbox"]:checked + label{
   box-shadow: 0px 2px 2px #00000040;
 }
 
+.ingresar .overlap-2:hover { /* Estilos para cuando el cursor pase por el boton registrate */
+  background-color:#022f722a;
+}
+
 .ingresar .text-wrapper-7 {
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: 85px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
