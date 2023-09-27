@@ -83,7 +83,6 @@ body{
     -webkit-background-clip: text !important;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
     color: transparent;
@@ -141,17 +140,61 @@ body{
     white-space: nowrap;
   }
   
-  .olvidaste-tu .thumb {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    top: 229px;
-    left: 45px;
-    background-color: #99a4f2;
-    border-radius: 6px;
-  }
+ /* Estilos para el icono de check (por defecto oculto) */
+.olvidaste-tu .check {
+  width: 20px;
+  height: 10px;
+  display: none;
+}
+
+/* Estilos para el contenedor del checkbox personalizado */
+.olvidaste-tu .thumb {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 229px;
+  left: 45px;
+  background-color: #99a4f2;
+  border-radius: 6px;
+}
+
+/* Estilos cuando se pasa el cursor sobre el contenedor del checkbox */
+.olvidaste-tu .thumb:hover {
+  background-color: #99a4f2;
+}
+
+/* Estilos para el checkbox por defecto (oculto) */
+.olvidaste-tu .checkbox_por_correo {
+  position: relative;
+  margin: 0px;
+  width: 19px;
+  height: 19px;
+  top: 1.5px;
+  left: 1.7px;
+  border: 6px;
+}
+
+/* Oculta el checkbox por defecto */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilos para el checkbox personalizado */
+input[type="checkbox"] + label {
+  position: relative;
+  margin: 0px;
+  width: 19px;
+  height: 19px;
+  top: 1.4px;
+  left: 1.5px;
+  border: 6px;
+  background-color: #99a4f2;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
   
-  .olvidaste-tu .thumb-2 {
+.olvidaste-tu .thumb-2 {
     position: absolute;
     width: 22px;
     height: 22px;
@@ -161,7 +204,7 @@ body{
     border-radius: 6px;
   }
   
-  .olvidaste-tu .div-wrapper {
+.olvidaste-tu .div-wrapper {
     width: 284px;
     height: 40px;
     top: 514px;
@@ -173,7 +216,7 @@ body{
     border-radius: 6px;
   }
   
-  .olvidaste-tu .text-wrapper-7 {
+.olvidaste-tu .text-wrapper-7 {
     position: absolute;
     top: 18px;
     left: 84px;
@@ -186,7 +229,7 @@ body{
     white-space: nowrap;
   }
   
-  .olvidaste-tu .rectangle-2 {
+.olvidaste-tu .rectangle-2 {
     position: absolute;
     width: 340px;
     height: 371px;
@@ -196,7 +239,7 @@ body{
     transform: rotate(61.08deg);
   }
   
-  .olvidaste-tu .rectangle-3 {
+.olvidaste-tu .rectangle-3 {
     position: absolute;
     width: 355px;
     height: 305px;
@@ -206,7 +249,7 @@ body{
     transform: rotate(30.77deg);
   }
   
-  .olvidaste-tu .rectangle-4 {
+.olvidaste-tu .rectangle-4 {
     position: absolute;
     width: 290px;
     height: 316px;

@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="Estilos/style3.css" />
+    <script src="JavaScript/showpass.js"></script>
+    <script src="JavaScript/nospaces.js"></script>
+    <script src="JavaScript/keepspaces.js"></script>
+    <script src="JavaScript/onlynumber.js"></script>
   </head>
   <body>
     <div class="ingresar-cdigo-de">
@@ -12,7 +16,9 @@
         <div class="rectangle-3"></div>
         <div class="rectangle-4"></div>
         <div class="overlap-group">
-          <div class="overlap"><div class="text-wrapper">******</div></div>
+          <div class="overlap">
+            <input class="input_code" type="text" id="code" maxlength="6" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)" />
+          </div>
           <a href="login.html"><div class="div-wrapper"><div class="text-wrapper-2">CANCELAR</div></div></a>
           <div class="text-wrapper-3">¿No recibiste el código?</div>
           <a href="newpassword.html"><div class="overlap-2"><div class="text-wrapper-4">CONTINUAR</div></div></a>
@@ -25,6 +31,11 @@
             saldra "Enviamos el código a: pepe@aea.com"-->
           <div class="text-wrapper-7">l***@ ó +51*****51</div>
         </div>
+        <script>
+          // Llama a la función de validación para el campo de entrada de codigo
+          const inputcode = document.getElementById('code');
+          validarNumero(inputcode);
+        </script>
       </div>
     </div>
   </body>

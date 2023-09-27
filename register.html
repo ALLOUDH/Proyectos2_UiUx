@@ -3,35 +3,55 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="Estilos/style1.css" />
+    <script src="JavaScript/showpass.js"></script>
+    <script src="JavaScript/nospaces.js"></script>
+    <script src="JavaScript/keepspaces.js"></script>
+    <script src="JavaScript/onlynumber.js"></script>
   </head>
   <body>
     <div class="registrarse">
       <div class="div">
         <div class="rectangle"></div>
         <div class="overlap-group">
-          <div class="overlap">
-            <img class="element-eye-icon" src="Resources/211661_eye_icon.svg" />
-            <div class="text-wrapper">******************</div>
-            <div class="rectangle-2"></div>
-          </div>
-          <div class="overlap-2">
-            <img class="img" src="Resources/211661_eye_icon.svg" />
-            <div class="text-wrapper-2">******************</div>
-            <div class="rectangle-2"></div>
-          </div>
-          <div class="text-wrapper-3">Nombres</div>
+          
+        
           <div class="text-wrapper-4">REGISTRARTE</div>
-          <div class="rectangle-3"></div>
+          <div class="text-wrapper-3">Nombres</div>
+          <div class="rectangle-3">
+            <input class="input_nombre" type="text" id="nombre" />
+          </div>
           <div class="text-wrapper-5">Apellidos</div>
           <div class="text-wrapper-6">Dirección de correo electronico</div>
           <div class="text-wrapper-7">Celular</div>
           <div class="text-wrapper-8">Nro. de licencia odontologica</div>
           <div class="text-wrapper-9">Contraseña</div>
           <div class="text-wrapper-10">Confirmar contraseña</div>
-          <div class="rectangle-4"></div>
-          <div class="rectangle-5"></div>
-          <div class="rectangle-6"></div>
-          <div class="rectangle-7"></div>
+          <div class="rectangle-4">
+            <input class="input_apellido" type="text" id="apellido" />
+          </div>
+          <div class="rectangle-6">
+            <input class="input_email" type="email" id="register_email" maxlength="64" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)"/>
+          </div>
+          <div class="rectangle-7">
+            <input class="input_phone" type="text" id="register_phone" maxlength="9" funt  oninput="removeSpaces(this)" onkeydown="preventSpaces(event)" />
+          </div>
+          <div class="rectangle-5">
+            <input class="input_licencia" type="text" id="licencia" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)" />
+           </div>
+           <div class="overlap-2"><!-- Para el campo de  contraseña -->
+            <input class="input_conf_pass" type="password" id="conf_password" maxlength="64" oninput="removeSpaces(this)"/>
+            <img class="element-eye-icon" src="Resources/slash_eye_icon.svg" onclick="mostrar_pass('conf_password', 'conf_eye-icon')" id="conf_eye-icon"/>
+          </div>
+          <div class="overlap"><!-- Para el campo de confirmación de contraseña -->
+            <input class="input_pass" type="password" id="password" maxlength="64" oninput="removeSpaces(this)"/>
+              <img class="element-eye-icon" src="Resources/slash_eye_icon.svg" onclick="mostrar_pass('password', 'eye-icon')" id="eye-icon"/>
+          </div>
+          <script>
+            // Llama a la función de validación para el campo de entrada de "Celular"
+            const inputPhone = document.getElementById('register_phone');
+            validarNumero(inputPhone);
+          </script>
+      
           <a href="login.html"><div class="div-wrapper"><div class="text-wrapper-11">REGISTRATE</div></div></a>
         </div>
         <div class="rectangle-8"></div>

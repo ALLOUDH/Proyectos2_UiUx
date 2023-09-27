@@ -58,7 +58,6 @@ body{
   -webkit-background-clip: text !important;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: transparent;
@@ -121,20 +120,13 @@ body{
   outline: none;
   border: 0px;
 }
-.ingresar .element-eye-icon { /* Estilos para el ojo abierto */
+.ingresar .element-eye-icon, #eye-icon.closed-eye {
   position: absolute;
-  width: 26px;
-  height: 23px;
-  top: 8px;
+  width: 25px; 
+  height: 26px; 
+  top: 10px;
   left: 250px;
-}
-
-#eye-icon.closed-eye { /* Estilos para el ojo cerrado */
-  position: absolute;
-  width: 26px;
-  height: 15px;
-  top: 12px;
-  left: 250px;
+  background-size: cover; 
 }
 
 .ingresar .thumb {
