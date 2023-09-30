@@ -6,41 +6,68 @@
     <script src="JavaScript/showpass.js"></script>
     <script src="JavaScript/nospaces.js"></script>
     <script src="JavaScript/keepspaces.js"></script>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2ncX4dr/EWAx0n2MK5G5hBZ6al5+qU"
+      crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="ingresar">
-      <div class="div">
-        <div class="rectangle"></div>
-        <div class="overlap-group"> <!--Es el Contenedor de todo el login como tal-->
-          <div class="text-wrapper">Correo Electrónico</div>
-          <div class="text-wrapper-2">BIENVENIDO</div>
-          <div class="rectangle-2"> <!--Contenedor del Text Input Email-->
-            <input class="input_email" type="email" id="login_email" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)"/>
+
+    <div class="container mt-4">
+        <div class="row  justify-content-center">
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 20%">
+
+              <div class="card-body" style="margin-top: 57px">
+                <h2 class="text-center text-wrapper-2">BIENVENIDO</h2>
+                
+                <!-- Formulario -->
+                <form>
+                    <div>
+                        <label class="text-wrapper"style="margin-top: 57px; margin-bottom: 20px">Correo Electrónico</label>
+                        <input class=" form-control input_email overlap" type="email" id="login_email" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)"/>
+                    </div>
+                    <div>
+                        <label class="text-wrapper-3"style="margin-top: 30px; margin-bottom: 20px">Contraseña</label>
+                        <input class="form-control input_pass overlap" type="password" id="password" maxlength="64" oninput="removeSpaces(this)"/>
+                    </div>
+
+                    <div class="checkbox-container"style="margin-bottom: 35px"> <!--Contenedor del checkbox-->
+                      <div class="thumb">
+                        <input class="checkbox_login_recordar" type="checkbox" id="recordar_checkbox" onclick="mostrarCheck('correo_checkbox')"/>
+                        <label class="recordar_checkbox" for="recordar_checkbox">
+                          <img class="check" src="Resources/Vector.svg"/> <!--El recurso Vector es el icono de Check en .SVG-->
+                        </label>
+                      </div>
+                      <div class="text-wrapper-4">Recuerdame</div>
+                    </div>
+
+                    <div class="content-buttons"style="margin-bottom: 25px" href="inicio.html">
+                      <button class="div-wrapper" type="submit">
+                        <div class="text-wrapper-6">INGRESAR</div>
+                      </button>
+                    </div>
+
+                    <div class="content-buttons"style="margin-bottom: 15px" href="register.html">
+                      <button class="overlap-2 btn-block" >
+                        <div class="text-wrapper-7">REGISTRATE</div>
+                      </button>
+                    </div>
+
+                    <a href="misspassword.html" style="margin-bottom: 50px" class="text-wrapper-5">Olvidaste tu contraseña?</a>
+
+                </form>
+            
+      
+              </div>
+            </div>
           </div>
-          <div class="text-wrapper-3">Contraseña</div>
-          <div class="overlap"> <!--Contenedor del Text Input Password-->
-            <input class="input_pass" type="password" id="password" maxlength="64" oninput="removeSpaces(this)"/>
-            <img class="element-eye-icon" src="Resources/slash_eye_icon.svg" onclick="mostrar_pass('password', 'eye-icon')" id="eye-icon"/>
-          </div>
-          <div class="thumb"> <!--Contenedor del checkbox-->
-            <input class="checkbox_login_recordar" type="checkbox" id="recordar_checkbox" onclick="mostrarCheck('correo_checkbox')"/>
-            <label for="recordar_checkbox">
-              <img class="check" src="Resources/Vector.svg"/> <!--El recurso Vector es el icono de Check en .SVG-->
-            </label>
-          </div>
-          <div class="text-wrapper-4">Recuerdame</div>
-          <a href="misspassword.html"><div class="text-wrapper-5">Olvidaste tu contraseña?</div></a>
-          <a href="inicio.html">
-            <div class="div-wrapper"><!--div-wrapper boton ingresar--><div class="text-wrapper-6">INGRESAR</div></div>
-          </a>
-          <a href="register.html">
-            <div class="overlap-2"><!--overlap -2 boton registrarse--><div class="text-wrapper-7">REGISTRATE</div></div>
-          </a>
         </div>
-        <div class="rectangle-3"></div>
-        <div class="rectangle-4"></div>
-        <div class="rectangle-5"></div>
       </div>
-    </div>
+
+     
   </body>
 </html>
