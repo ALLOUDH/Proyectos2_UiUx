@@ -1,5 +1,12 @@
 body{
-    margin: 0px;
+  margin: 0px;
+  background-image: url('/Resources/Fondo_Proyectos2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .registrarse {
@@ -10,23 +17,6 @@ body{
     width: 100%;
   }
   
-  .registrarse .div {
-    background-color: rgba(255, 255, 255, 1);
-    background: linear-gradient(180deg, rgb(207.19, 240.66, 255) 0%, rgb(148.73, 157.98, 241.19) 100%);
-    width: 100%;
-    height: 100vh;
-    position: relative;
-  }
-  
-  .registrarse .rectangle {
-    position: absolute;
-    width: 257px;
-    height: 271px;
-    top: 660px;
-    left: 234px;
-    background-color: #99aacc;
-    transform: rotate(66.59deg);
-  }
   
   .registrarse .overlap-group {
     position: absolute;
@@ -111,8 +101,7 @@ body{
     border-color: #c9c9c9d9;
   }
   
-  .registrarse .overlap-2 {
-    position: absolute;
+.overlap-2 {
     width: 284px;
     height: 35px;
     top: 431px;
@@ -120,7 +109,7 @@ body{
     border-radius: 4px;
     border: 1px solid;
     border-color: #c9c9c9d9;
-  }
+}
   
   .registrarse .img {
     top: 5px;
@@ -144,8 +133,7 @@ body{
     white-space: nowrap;
   }
   
-  .registrarse .text-wrapper-3 {
-    position: absolute;
+.text-wrapper-3 {
     width: 61px;
     top: 89px;
     left: 29px;
@@ -158,22 +146,21 @@ body{
     white-space: nowrap;
   }
   
-  .registrarse .text-wrapper-4 {
-    position: absolute;
-    top: 54px;
-    left: 102px;
-    background: linear-gradient(180deg, rgb(207, 241, 255) 0%, rgb(149, 158, 241) 100%);
-    -webkit-background-clip: text !important;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: transparent;
-    font-size: 16px;
-    letter-spacing: 2.64px;
-    line-height: normal;
-    white-space: nowrap;
-  }
+.text-wrapper-4 {
+  top: 54px;
+  left: 102px;
+  background: linear-gradient(180deg, rgb(207, 241, 255) 0%, rgb(149, 158, 241) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 20px;
+  letter-spacing: 2.64px;
+  line-height: normal;
+  white-space: nowrap;   
+}
   
   .registrarse .rectangle-3 {
     position: absolute;
@@ -195,90 +182,19 @@ body{
   outline: none;
   border: 0px;
   }
-  
-  .registrarse .text-wrapper-5 {
-    position: absolute;
-    width: 61px;
-    top: 156px;
-    left: 29px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .registrarse .text-wrapper-6 {
-    position: absolute;
-    width: 243px;
-    top: 221px;
-    left: 28px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .registrarse .text-wrapper-7 {
-    position: absolute;
-    width: 243px;
-    top: 286px;
-    left: 29px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .registrarse .text-wrapper-8 {
-    position: absolute;
-    width: 243px;
-    top: 350px;
-    left: 29px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .registrarse .text-wrapper-9 {
-    position: absolute;
-    width: 243px;
-    top: 409px;
-    left: 28px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .registrarse .text-wrapper-10 {
-    position: absolute;
-    width: 243px;
-    top: 473px;
-    left: 28px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
+
+.text-wrapper-7 {
+  width: 243px;
+  top: 286px;
+  left: 29px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
   
   .registrarse .rectangle-4 {
     position: absolute;
@@ -354,67 +270,34 @@ body{
     border-color: #c9c9c9d9;
   }
 
-  .registrarse .input_phone {
-    position: absolute;
-    width: 260px;
-    height: 20px;
-    left: 10px;
-    top: 10px;
-    outline: none;
-    border: 0px;
-  }
+.content-buttons{
+  display: flex; 
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
   
-  .registrarse .div-wrapper {
-    position: absolute;
-    width: 284px;
-    height: 40px;
-    top: 550px;
-    left: 28px;
-    background-color: #959ef1;
-    border-radius: 6px;
-    box-shadow: 0px 2px 2px #00000040;
-  }
+.div-wrapper {
+   width: 284px;
+  height: 40px;
+  background-color: #959ef1;
+  border-radius: 6px;
+  border: none;
+}
+.div-wrapper:hover { /* Estilos para cuando el cursor pase por el boton ingresar */
+  background-color: #3a517463; 
+}
   
-  .registrarse .text-wrapper-11 {
-    position: absolute;
-    top: 19px;
-    left: 86px;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 2.8px;
-    line-height: 14px;
-    white-space: nowrap;
-  }
-  
-  .registrarse .rectangle-8 {
-    position: absolute;
-    width: 340px;
-    height: 371px;
-    top: 68px;
-    left: 160px;
-    background-color: #caecfa;
-    transform: rotate(61.08deg);
-  }
-  
-  .registrarse .rectangle-9 {
-    position: absolute;
-    width: 355px;
-    height: 305px;
-    top: 70px;
-    left: 1448px;
-    background-color: #a8b7d6;
-    transform: rotate(30.77deg);
-  }
-  
-  .registrarse .rectangle-10 {
-    position: absolute;
-    width: 290px;
-    height: 316px;
-    top: 610px;
-    left: 1451px;
-    background-color: #8e99ff;
-    transform: rotate(67.75deg);
-  }
+.text-wrapper-11 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  line-height: 14px;
+  white-space: nowrap;
+  text-align: center;
+}
+ 
   

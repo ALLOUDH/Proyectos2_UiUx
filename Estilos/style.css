@@ -20,25 +20,6 @@ body {
   position: relative;
 }
 
-.ingresar .rectangle {
-  position: absolute;
-  width: 257px;
-  height: 271px;
-  top: 660px;
-  left: 234px;
-  background-color: #99aacc;
-  transform: rotate(66.59deg);
-}
-
-.ingresar .overlap-group {
-  position: absolute;
-  width: 345px;
-  height: 610px;
-  top: 217px;
-  left: 794px;
-  background-color: #ffffff;
-  border-radius: 6px;
-}
 
 .text-wrapper {
   top: 149px;
@@ -67,26 +48,6 @@ body {
   white-space: nowrap;
 }
 
-.ingresar .rectangle-2 {
-  position: absolute;
-  width: 284px;
-  height: 40px;
-  top: 185px;
-  left: 22px;
-  border-radius: 4px;
-  border: 1px solid;
-  border-color: #c9c9c9d9;
-}
-
-.ingresar .input_email {
-  width: 260px;
-  height: 20px;
-  left: 10px;
-  top: 10px;
-  outline: none;
-  border: 0px;
-}
-
 .text-wrapper-3 {
   top: 257px;
   left: 22px;
@@ -108,22 +69,6 @@ body {
   border-color: #c9c9c9d9;
 }
 
-.ingresar .input_pass{
-  width: 210px;
-  height: 20px;
-  left: 10px;
-  top: 10px;
-  outline: none;
-  border: 0px;
-}
-.element-eye-icon, #eye-icon.closed-eye {
-  
-  width: 25px; 
-  height: 26px; 
-  top: 10px;
-  left: 250px;
-  background-size: cover; 
-}
 
 .checkbox-container {
   display: flex;
@@ -182,7 +127,6 @@ input[type="checkbox"] + label{ /* Estilos para el checkbox perzonalizado */
 }
 
 .text-wrapper-4 {
- 
   top: 349px;
   left: 53px;
   font-family: "Inter-Regular", Helvetica;
@@ -277,16 +221,6 @@ input[type="checkbox"] + label{ /* Estilos para el checkbox perzonalizado */
   left: 160px;
   background-color: #caecfa;
   transform: rotate(61.08deg);
-}
-
-.ingresar .rectangle-4 {
-  position: absolute;
-  width: 355px;
-  height: 305px;
-  top: 70px;
-  left: 1448px;
-  background-color: #a8b7d6;
-  transform: rotate(30.77deg);
 }
 
 .ingresar .rectangle-5 {

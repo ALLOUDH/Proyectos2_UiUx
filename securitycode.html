@@ -7,36 +7,56 @@
     <script src="JavaScript/nospaces.js"></script>
     <script src="JavaScript/keepspaces.js"></script>
     <script src="JavaScript/onlynumber.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2ncX4dr/EWAx0n2MK5G5hBZ6al5+qU"
+    crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <div class="ingresar-cdigo-de">
-      <div class="div">
-        <div class="rectangle"></div>
-        <div class="rectangle-2"></div>
-        <div class="rectangle-3"></div>
-        <div class="rectangle-4"></div>
-        <div class="overlap-group">
-          <div class="overlap">
-            <input class="input_code" type="text" id="code" maxlength="6" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)" />
+    
+    <div class="container mt-4">
+      <div class="row  justify-content-center">
+        <div class="col-md-4">
+          <div class="card" style="margin-top: 10%">
+
+            <div class="card-body" style="margin-top: 40px">
+              <h2 class="text-center titulo">INGRESAR EL CÓDIGO DE SEGURIDAD</h2>
+              <p class="text-wrapper-6">Comprueba si recibiste un correo electrónico o SMS con tu código de 6 dígitos.</p>
+
+              <div class="codigo-container"> <!--Contenedor del código-->
+                <input class="input_code" style="margin-right: 10px;" type="text" id="code" maxlength="6" oninput="removeSpaces(this)" onkeydown="preventSpaces(event)" />
+                
+                <div>
+                  <p class="text-wrapper-5" style="text-align: center;">Enviamos el código a:</p>
+                  <p class="text-wrapper-5">a*****@continental.edu.pe</p>
+                </div>
+              </div>
+
+              <div class="content-buttons"style="margin-top: 15px; margin-bottom: 30px" href="newpassword.html">
+                <button href="newpassword.html" class="overlap-2" >
+                  <div class="text-wrapper-4">CONTINUAR</div>
+                </button>
+              </div>
+
+              <div class="content-buttons"style="margin-bottom: 15px" href="register.html">
+                <button class="div-wrapper btn-block" href="login.html">
+                  <div class="text-wrapper-2">CANCELAR</div>
+                </button>
+              </div>
+
+              <a href="misspassword.html" style="margin-bottom: 70px; margin-top: 30px;" class="text-wrapper-3">¿No recibiste el código?</a>
+          
+    
+            </div>
           </div>
-          <a href="login.html"><div class="div-wrapper"><div class="text-wrapper-2">CANCELAR</div></div></a>
-          <div class="text-wrapper-3">¿No recibiste el código?</div>
-          <a href="newpassword.html"><div class="overlap-2"><div class="text-wrapper-4">CONTINUAR</div></div></a>
-          <div class="text-wrapper-5">Enviamos el código a:</div>
-          <p class="p">INGRESAR EL CÓDIGO DE SEGURIDAD</p>
-          <p class="text-wrapper-6">Comprueba si recibiste un correo electrónico o SMS con tu código de 6 dígitos.</p>
-          <!-- Para el apartado de abajo (text-wrapper-7), en base a la selección de por que medio
-            querias que se te envie el codigo aparecera en la pantalla. EJM: Si pulsaste SMS
-            te saldra algo como "Enviamos el código a: +51999999 // y si pulsaste en correo
-            saldra "Enviamos el código a: pepe@aea.com"-->
-          <div class="text-wrapper-7">l***@ ó +51*****51</div>
         </div>
-        <script>
-          // Llama a la función de validación para el campo de entrada de codigo
-          const inputcode = document.getElementById('code');
-          validarNumero(inputcode);
-        </script>
       </div>
     </div>
+
+
   </body>
 </html>
